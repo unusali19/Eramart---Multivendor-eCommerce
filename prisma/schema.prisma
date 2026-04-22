@@ -102,6 +102,7 @@ model Shop {
   address            String
   zipCode            String
   role               ShopRole  @default(SELLER)
+  active             Boolean @default(false)
 
   avatarUrl          String?
 
@@ -163,6 +164,7 @@ model Product {
   name           String
   tags           String?
   description    String?
+  color          String
 
   originalPrice  Int
   discountPrice  Int
